@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(233, 233, 233);
+}
+
+.header-infor {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    background-color: rgb(243, 73, 73);
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.email {
+    margin: 0 30px;
+}
+
+.list {
+    display: inline-block;
+    list-style: none;
+    margin: 0 8px;
+    position: relative;
+}
+
+.languages,
+.list>a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.list-item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    top: 50%;
+    right: -9px;
+    transform: translateY(-50%);
+}
+
+.languages :hover,
+.list :hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.languages {
+    margin: 0 30px;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.header-logo {
+    margin-left: 30px;
+}
+
+.header-logo img {
+    width: 120px;
+}
+
+.header-search {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-left: 150px;
+}
+
+.header-search-input {
+    display: flex; 
+}
+
+.search-input {
+    width: 40rem;
+    height: 100%;
+    border: none;
+    color: #333;
+    font-size: 1.4rem;
+    padding: 0 16px;
+    border-radius: 3px;
+}
+
+.search-btn {
+    background-color: rgb(243, 73, 73);
+    border: none;
+    height: 34px;
+    width: 60px;
+    border-radius: 3px;
+    outline: none;
+}
+
+.search-btn-icon:hover,
+.search-btn:hover {
+    cursor: pointer;
+    background-color: rgb(230, 29, 29);
+    color: rgb(243, 236, 236);
+}
+
+.header-top-nav {
+    margin: 0 25px;
+}
+
+.search-btn-icon {
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.header-list {
+    display: inline-block;
+    list-style: none;
+    margin: 0 8px;
+}
+
+.header-list>a {
+    color: #333;
+    text-decoration: none;
+    font-size: 300;
+    font-size: 1.5rem;
+}
+
+.header-list>a:hover {
+    color: rgb(243, 73, 73, 0.5);
+}
+
+.header-nav {
+    margin: 0 30px;
+    border: 1px solid rgb(230, 29, 29);
+    box-shadow: 1px 1px rgb(230, 29, 29), -1em 0.4em rgb(215, 226, 230);
+}
+
+.header-menu {
+    display: inline-block;
+    list-style: none;
+    margin: 0 8px;
+    line-height: 50px;
+    margin: 0 40px;
+}
+
+.header-menu>a {
+    color: #333;
+    text-decoration: none;
+    font-size: 600;
+    font-size: 1.7rem;
+}
+
+.header-menu>a:hover {
+    color: rgb(243, 73, 73, 0.5);
+}
+
+.image {
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.image img {
+    width: 100%;
+    height: 250px;
+}
+
+h1 {
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 42%;
+    font-weight: bold;
+    font-size: 50px;
+    color: rgb(243, 73, 73);
+    font-style: italic;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+}
+
+.image-1 img{
+    width: 75%;
+    height: 600px;
+    margin-left: 40px;
+}
+
+.ten {
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.icons {
+    display: flex;
+}
+
+.icons i {
+    font-size: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    color: rgb(15, 172, 26);
+}
+
+.icons p {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.lienhe {
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text-1 input{
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.form-name {
+    width: 250px;
+    height: 40px;
+    border: 2px solid rgb(159, 156, 156);
+}
+
+.form-email {
+    width: 250px;
+    height: 40px;
+    margin-left: 20px;
+    border: 2px solid rgb(159, 156, 156);
+}
+
+.form-message {
+    width: 522px;
+    height: 100px;
+    border: 2px solid rgb(159, 156, 156);
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: Arial;
+}
+
+.form-sbm {
+    height: 40px;
+    width: 350px;
+    background-color: rgb(243, 73, 73);
+    border: none;
+    border-radius: 5px;
+    margin-left: 85px;
+    font-weight: bold;
+}
+
+.form-sbm:hover {
+    color: white;
+    background-color: rgba(241, 78, 78, 0.605);
+}
+
+footer {
+    margin-top: 50px;
+}
+
+.footer-top {
+    display: flex;
+    background-color: rgb(54, 54, 54);
+    padding: 30px 50px 0px 50px;
+    justify-content: space-around;
+    line-height: 50px;
+}
+
+.footer-center {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-info {
+    line-height: 1.5;
+    font-size: 1.6rem;
+    margin: 15px 30px 30px 30px;
+}
+
+.center-menu {
+    font-size: 1.4rem;
+    margin: 30px;
+}
+
+.menu-center {
+    list-style: none;
+    margin: 8px 10px;
+    line-height: 20px;
+}
+
+.menu-center-list>a {
+    color: #333;
+    text-decoration: none;
+    font-size: 600;
+    font-size: 1.7rem;
+    position: relative;
+    transition: right linear 0.1s;
+}
+
+.menu-center-list>a:hover {
+    right: -4px;
+    color: #f3494980;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    background-color: rgb(243, 73, 73);
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
